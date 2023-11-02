@@ -1,4 +1,4 @@
-![TV-program](https://github.com/AnastasiaMaslova1/TV-program/assets/128154905/86c06f5a-4691-4c03-9b20-a28e863731b1)
+![TV-program1](https://github.com/AnastasiaMaslova1/TV-program/assets/128154905/d053e426-e662-4cb1-8819-247417884d93)
 # TV-program
 1. Общие требования:
 
