@@ -1,4 +1,4 @@
-﻿namespace TV_program.WebAPI.IoC
+﻿namespace TV_program.Service.IoC
 {
     /// <summary>
     /// Static class for Swagger configuration
@@ -19,3 +19,4 @@
         }
     }
 }
+

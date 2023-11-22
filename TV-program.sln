@@ -3,14 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TV-program.WebAPI", "TV-program.WebAPI\TV-program.WebAPI.csproj", "{953E7514-EB32-41FD-B7B3-70F80F1F7C80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TV-program.Service", "TV-program.WebAPI\TV-program.Service.csproj", "{953E7514-EB32-41FD-B7B3-70F80F1F7C80}"
 	ProjectSection(ProjectDependencies) = postProject
 		{10B657AE-0C9D-44B5-9B7E-248BC665EB34} = {10B657AE-0C9D-44B5-9B7E-248BC665EB34}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TV-program.DataAccess", "TV-program.DataAccess\TV-program.DataAccess.csproj", "{05B9349B-5EE1-4EB1-B762-AD77638F4C50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TV_program.DataAccess", "TV-program.DataAccess\TV_program.DataAccess.csproj", "{05B9349B-5EE1-4EB1-B762-AD77638F4C50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TV-program.BL", "TV-program.BL\TV-program.BL.csproj", "{10B657AE-0C9D-44B5-9B7E-248BC665EB34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TV_program.BL", "TV-program.BL\TV_program.BL.csproj", "{10B657AE-0C9D-44B5-9B7E-248BC665EB34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C759245D-657C-417B-BAA2-48AC8FFDCF97}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TV_program.BL.UnitTests", "TV_program.BL.UnitTests\TV_program.BL.UnitTests.csproj", "{B6DBF88B-1E97-4267-955A-CC4ED80C1CCB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TV_program.UnitTests", "TV_program.UnitTests\TV_program.UnitTests.csproj", "{325B9B61-4BF9-43CA-AD95-06C560FDE95A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TV_program.Repository", "TV_program.Repository\TV_program.Repository.csproj", "{0B33004B-2C7B-4C44-8A9B-C546DB4CB2AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,9 +38,25 @@ Global
 		{10B657AE-0C9D-44B5-9B7E-248BC665EB34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10B657AE-0C9D-44B5-9B7E-248BC665EB34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10B657AE-0C9D-44B5-9B7E-248BC665EB34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6DBF88B-1E97-4267-955A-CC4ED80C1CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6DBF88B-1E97-4267-955A-CC4ED80C1CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6DBF88B-1E97-4267-955A-CC4ED80C1CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6DBF88B-1E97-4267-955A-CC4ED80C1CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{325B9B61-4BF9-43CA-AD95-06C560FDE95A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{325B9B61-4BF9-43CA-AD95-06C560FDE95A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{325B9B61-4BF9-43CA-AD95-06C560FDE95A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{325B9B61-4BF9-43CA-AD95-06C560FDE95A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B33004B-2C7B-4C44-8A9B-C546DB4CB2AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B33004B-2C7B-4C44-8A9B-C546DB4CB2AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B33004B-2C7B-4C44-8A9B-C546DB4CB2AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B33004B-2C7B-4C44-8A9B-C546DB4CB2AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B6DBF88B-1E97-4267-955A-CC4ED80C1CCB} = {C759245D-657C-417B-BAA2-48AC8FFDCF97}
+		{325B9B61-4BF9-43CA-AD95-06C560FDE95A} = {C759245D-657C-417B-BAA2-48AC8FFDCF97}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {912F0495-8960-4785-9FF3-33A9CF85C509}

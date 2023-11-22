@@ -1,6 +1,6 @@
 ﻿using Serilog;
 
-namespace TV_program.WebAPI.IoC
+namespace TV_program.Service.IoC
 {
     /// <summary>
     /// Static class for serilog configuration
@@ -25,3 +25,4 @@ namespace TV_program.WebAPI.IoC
         }
     }
 }
+
