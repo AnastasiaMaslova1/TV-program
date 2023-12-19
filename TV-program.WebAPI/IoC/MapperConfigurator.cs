@@ -1,5 +1,5 @@
 ﻿using TV_program.BL.Mapper;
-using BookShop.WebAPI.Mapper;
+using TV_program.WebAPI.Mapper;
 using TV_program.WebAPI.Mapper;
 
 namespace TV_program.WebAPI.IoC

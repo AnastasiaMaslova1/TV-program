@@ -12,36 +12,39 @@ namespace TV_program.BL.Admins
 {
     public class AdminsManager : IAdminsManager
     {
-        private readonly IRepository<AdminEntity> _adminRepository;
+        private readonly IRepository<AdminEntity> _adminsRepository;
         private readonly IMapper _mapper;
-        public AdminsProvider(IRepository<AdminEntity> adminsRepository, IMapper mapper)
+        public AdminsManager(IRepository<AdminEntity> adminsRepository, IMapper mapper)
         {
-            _adminRepository = adminsRepository;
+            _adminsRepository = adminsRepository;
             _mapper = mapper;
         }
 
-        public IEnumerable<AdminModel> GetAdmins(AdminModelFilter modelFilter = null)
+        public AdminModel CreateAdmin(CreateAdminModel model)
         {
-            var username = modelFilter.Username;
-            var phoneNumber = modelFilter.PhoneNumber;
-            var email = modelFilter.Email;
+            var entity = _mapper.Map<AdminEntity>(model);
 
-            var admins = _adminRepository.GetAll(x =>
-            (username == null || username == x.Username) &&
-            (phoneNumber == null || phoneNumber == x.PhoneNumber) &&
-            (email == null || email == x.Email));
+            _adminsRepository.Save(entity);
 
-
-            return _mapper.Map<IEnumerable<AdminModel>>(admins);
+            return _mapper.Map<AdminModel>(entity);
         }
-
-        public AdminModel GetAdminInfo(Guid id)
+        public void DeleteAdmin(Guid id)
         {
-            var admin = _adminRepository.GetById(id);
-            if (admin is null)
-                throw new ArgumentException("Admin not found.");
-
-            return _mapper.Map<AdminModel>(admin);
+            var entity = _adminsRepository.GetById(id);
+            if (entity == null)
+                throw new ArgumentException("Admin not found");
+            _adminsRepository.Delete(entity);
+        }
+        public AdminModel UpdateAdmin(Guid id, UpdateAdminModel model)
+        {
+            var entity = _adminsRepository.GetById(id);
+            if (entity == null)
+                throw new ArgumentException("Admin not found");
+            entity.PasswordHash = model.PasswordHash;
+            entity.PhoneNumber = model.PhoneNumber;
+            entity.Email = model.Email;
+            _adminsRepository.Save(entity);
+            return _mapper.Map<AdminModel>(entity);
         }
     }
 }

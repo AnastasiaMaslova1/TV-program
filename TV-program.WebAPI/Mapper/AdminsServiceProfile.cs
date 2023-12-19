@@ -8,7 +8,7 @@ namespace TV_program.WebAPI.Mapper
     {
         public AdminsServiceProfile()
         {
-            CreateMap<AdminFilter, AdminModelFilter>();
+            CreateMap<AdminsFilter, AdminModelFilter>();
             CreateMap<CreateAdminRequest, CreateAdminModel>();
             CreateMap<UpdateAdminRequest, UpdateAdminModel>();
         }
