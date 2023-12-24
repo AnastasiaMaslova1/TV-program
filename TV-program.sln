@@ -18,7 +18,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TV_program.BL.UnitTests", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TV_program.UnitTests", "TV_program.UnitTests\TV_program.UnitTests.csproj", "{325B9B61-4BF9-43CA-AD95-06C560FDE95A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TV_program.Repository", "TV_program.Repository\TV_program.Repository.csproj", "{0B33004B-2C7B-4C44-8A9B-C546DB4CB2AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TV_program.Repository", "TV_program.Repository\TV_program.Repository.csproj", "{0B33004B-2C7B-4C44-8A9B-C546DB4CB2AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TV_program.WebAPI.UnitTests", "TV_program.WebAPI.UnitTests\TV_program.WebAPI.UnitTests.csproj", "{40E0E1D1-7641-46B7-BADC-6D19D0462CDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +52,10 @@ Global
 		{0B33004B-2C7B-4C44-8A9B-C546DB4CB2AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B33004B-2C7B-4C44-8A9B-C546DB4CB2AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B33004B-2C7B-4C44-8A9B-C546DB4CB2AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40E0E1D1-7641-46B7-BADC-6D19D0462CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40E0E1D1-7641-46B7-BADC-6D19D0462CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40E0E1D1-7641-46B7-BADC-6D19D0462CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40E0E1D1-7641-46B7-BADC-6D19D0462CDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B6DBF88B-1E97-4267-955A-CC4ED80C1CCB} = {C759245D-657C-417B-BAA2-48AC8FFDCF97}
 		{325B9B61-4BF9-43CA-AD95-06C560FDE95A} = {C759245D-657C-417B-BAA2-48AC8FFDCF97}
+		{40E0E1D1-7641-46B7-BADC-6D19D0462CDD} = {C759245D-657C-417B-BAA2-48AC8FFDCF97}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {912F0495-8960-4785-9FF3-33A9CF85C509}

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using AutoMapper.Configuration;
 using TV_program.BL.TVShow;
 using TV_program.BL.TVShow.Entities;
-using TV_program.WebAPI.Controllers.Entiteis;
+using TV_program.WebAPI.Controllers.Entities;
 
 namespace TV_program.WebAPI.Controllers
 {
